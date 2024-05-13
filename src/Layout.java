@@ -27,10 +27,21 @@ public class Layout {
         System.out.println("________________________");
         System.out.println("|    MoN Keys Store    |");
         System.out.println("|                      |");
-        System.out.println("| Name:                |");
-        System.out.println("| CPF:                 |");
-        System.out.println("| Password:            |");
+        System.out.println("| Name:                 ");
+        System.out.println("| CPF:                  ");
+        System.out.println("| Password:             ");
         System.out.println("| (4 Digits)           |");
+        System.out.println("|______________________|");
+    }
+
+    public void exit() {
+        System.out.println("________________________");
+        System.out.println("|    MoN Keys Store    |");
+        System.out.println("|                      |");
+        System.out.println("|    COME BACK SOON    |");
+        System.out.println("|         BYE!!        |");
+        System.out.println("|                      |");
+        System.out.println("|                      |");
         System.out.println("|______________________|");
     }
 }
