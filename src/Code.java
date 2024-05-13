@@ -6,6 +6,7 @@ public class Code {
     String cpf;
     int password;
     Client client = new Client(name, cpf, password);
+    Catalog catalog = new Catalog();
     Scanner sc = new Scanner(System.in);
 
     public void start() {
@@ -19,12 +20,15 @@ public class Code {
                 layout.clean();
                 layout.register();
                 client.register();
+                option = 3;
             } else if(option == 2) {
                 layout.clean();
                 // client.login();
             } else if(option == 3) {
                 layout.clean();
-                // catalog.print();
+                client.info();
+                layout.catalog();
+                catalog.start();
             } else if(option == 4) {
                 layout.clean();
                 layout.exit();

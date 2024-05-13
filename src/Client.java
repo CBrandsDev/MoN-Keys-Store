@@ -37,7 +37,7 @@ public class Client {
         System.out.println("| Name: "+name+"                ");
         System.out.println("| CPF:                  ");
         System.out.println("| Password:             ");
-        System.out.println("| (4 Digits)           |");
+        System.out.println("|                      |");
         System.out.println("|______________________|");
         String cpf = readCpf(sc);
         System.out.println("________________________");
@@ -46,19 +46,29 @@ public class Client {
         System.out.println("| Name: "+name+"                ");
         System.out.println("| CPF: "+cpf+"                  ");
         System.out.println("| Password:             ");
-        System.out.println("| (4 Digits)           |");
+        System.out.println("|                      |");
         System.out.println("|______________________|");
         int password = readPassword(sc);
         
         clients.add(new Client(name, cpf, password));
-        
+
+        layout.clean();
+    }
+
+    public void info() {
+        System.out.println("________________________");
+        System.out.println("|    MoN Keys Store    |");
+        System.out.println("| Welcome              |");
+        System.out.println("| "+name+"                ");
+        System.out.println("| "+cpf+"                  ");
+        System.out.println("|______________________|");
     }
     
     public static String readName(Scanner sc) {
         Layout layout = new Layout();
         layout.register();
         String name;
-        System.out.println("Type your name\n");
+        System.out.println("Type your name:\n");
         name = sc.nextLine();
         layout.clean();
         return name;
@@ -67,8 +77,7 @@ public class Client {
     public static String readCpf(Scanner sc) {
         Layout layout = new Layout();
         String cpf;
-        System.out.println("Type your cpf\n");
-        System.out.println("testse");
+        System.out.println("Type your cpf:\n");
         cpf = sc.nextLine();
         layout.clean();
         return cpf;
@@ -77,8 +86,7 @@ public class Client {
     public static int readPassword(Scanner sc) {
         Layout layout = new Layout();
         int password;
-        System.out.println("Type your 4 digitis password\n");
-        System.out.println("testse");
+        System.out.println("Type your 4 digits password:\n");
         password = sc.nextInt();
         layout.clean();
         return password;
