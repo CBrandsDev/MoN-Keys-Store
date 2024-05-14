@@ -1,13 +1,11 @@
 import java.util.Scanner;
 
 public class Code {
+    Client client = new Client();
     Layout layout = new Layout();
-    String name;
-    String cpf;
-    int password;
-    Client client = new Client(name, cpf, password);
     Catalog catalog = new Catalog();
     Scanner sc = new Scanner(System.in);
+
 
     public void start() {
         layout.clean();
