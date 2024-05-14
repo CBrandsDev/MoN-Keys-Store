@@ -88,7 +88,7 @@ public class Client {
             if (verify == 1) {
                 register();
             } else if (verify == 2) {
-                app.start();
+                app.mainMenu();
             }
         }
     }

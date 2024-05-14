@@ -7,7 +7,7 @@ public class Code {
     Scanner sc = new Scanner(System.in);
 
 
-    public void start() {
+    public void mainMenu() {
         layout.clean();
         layout.mainMenu();
         boolean loop = true;
