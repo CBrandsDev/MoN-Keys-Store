@@ -88,6 +88,10 @@ public class Client {
         System.out.println("|______________________|");
     }
 
+    public void login() {
+        
+    }
+
     public void info() {
         System.out.println("________________________");
         System.out.println("|    MoN Keys Store    |");

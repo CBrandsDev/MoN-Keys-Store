@@ -21,7 +21,7 @@ public class Code {
                 option = 3;
             } else if(option == 2) {
                 layout.clean();
-                // client.login();
+                client.login();
             } else if(option == 3) {
                 layout.clean();
                 client.info();
