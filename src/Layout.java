@@ -27,9 +27,9 @@ public class Layout {
         System.out.println("________________________");
         System.out.println("|    MoN Keys Store    |");
         System.out.println("|                      |");
-        System.out.println("| Name:                 ");
-        System.out.println("| CPF:                  ");
-        System.out.println("| Password:             ");
+        System.out.println("| Name:                |");
+        System.out.println("| CPF:                 |");
+        System.out.println("| Password:            ");
         System.out.println("|                      |");
         System.out.println("|______________________|");
     }
