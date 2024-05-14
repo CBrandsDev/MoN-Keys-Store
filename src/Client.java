@@ -6,6 +6,7 @@ public class Client {
     private String password;
 
     Layout layout = new Layout();
+    Code app = new Code();
     Scanner sc = new Scanner(System.in);
 
     public void register() {
@@ -89,7 +90,15 @@ public class Client {
     }
 
     public void login() {
-        
+        if (name == null) {
+            System.out.println("You don't have a register\n Do you want to register? [1 - yes | 2 - no]");
+            int verify = sc.nextInt();
+            if (verify == 1) {
+                register();
+            } else if (verify == 2) {
+                app.mainMenu();
+            }
+        }
     }
 
     public void info() {

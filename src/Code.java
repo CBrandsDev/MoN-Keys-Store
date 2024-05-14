@@ -7,7 +7,7 @@ public class Code {
     Scanner sc = new Scanner(System.in);
 
 
-    public void start() {
+    public void mainMenu() {
         layout.clean();
         layout.mainMenu();
         boolean loop = true;
@@ -22,6 +22,7 @@ public class Code {
             } else if(option == 2) {
                 layout.clean();
                 client.login();
+                option = 3;
             } else if(option == 3) {
                 layout.clean();
                 client.info();
