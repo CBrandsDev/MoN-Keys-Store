@@ -10,6 +10,17 @@ public class Layout {
         System.out.println("");
         System.out.println("");
         System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
     }
 
     public void mainMenu() {
@@ -29,7 +40,18 @@ public class Layout {
         System.out.println("|                      |");
         System.out.println("| Name:                |");
         System.out.println("| CPF:                 |");
-        System.out.println("| Password:            ");
+        System.out.println("| Password:            |");
+        System.out.println("|                      |");
+        System.out.println("|______________________|");
+    }
+
+    public void login() {
+        System.out.println("________________________");
+        System.out.println("|    MoN Keys Store    |");
+        System.out.println("|                      |");
+        System.out.println("| Name:                |");
+        System.out.println("| Password:            |");
+        System.out.println("|                      |");
         System.out.println("|                      |");
         System.out.println("|______________________|");
     }
@@ -42,6 +64,10 @@ public class Layout {
         System.out.println("| 3 -                  |");
         System.out.println("| 4 -                  |");
         System.out.println("|______________________|");
+    }
+
+    public void catalogOptions() {
+        System.out.println("1 - To Buy | 2 - Check Cart | 3 - Back Menu");
     }
 
     public void exit() {

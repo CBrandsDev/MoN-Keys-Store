@@ -57,6 +57,42 @@ public class Client {
         }
         return password;
     }
+   
+    public void login() {
+        Code app = new Code();
+        if (name == null) {
+            System.out.println("| You don't have a register\n| Do you want to register? [1 - yes | 2 - no]");
+            int verify = sc.nextInt();
+            if (verify == 1) {
+                register();
+            } else if (verify == 2) {
+                app.mainMenu();
+            }
+        }
+        layout.clean();
+        layout.login();
+        System.out.println("Name: ");
+        String loginName = sc.nextLine();
+        if(!loginName.equals(name)) {
+            layout.clean();
+            layout.login();
+            System.out.println("Name incorrect, type again: ");
+            loginName = sc.nextLine();
+        } 
+        layout.clean();
+        loginInfo();
+        System.out.println("Password: ");
+        String loginPass = sc.nextLine();
+        if(!loginPass.equals(password)) {
+            layout.clean();
+            loginInfo();
+            System.out.println("Password incorrect, type again: ");
+            loginPass = sc.nextLine();
+        }
+        info();
+        layout.catalog();
+    }
+
     public void tableInfo() {
         System.out.println("________________________");
         System.out.println("|    MoN Keys Store    |");
@@ -80,17 +116,15 @@ public class Client {
         System.out.println("|______________________|");
     }
 
-    public void login() {
-        Code app = new Code();
-        if (name == null) {
-            System.out.println("| You don't have a register\n| Do you want to register? [1 - yes | 2 - no]");
-            int verify = sc.nextInt();
-            if (verify == 1) {
-                register();
-            } else if (verify == 2) {
-                app.mainMenu();
-            }
-        }
+    public void loginInfo() {
+        System.out.println("________________________");
+        System.out.println("|    MoN Keys Store    |");
+        System.out.println("|                      |");
+        System.out.println("| Name:"+name+"                |");
+        System.out.println("| Password:            |");
+        System.out.println("|                      |");
+        System.out.println("|                      |");
+        System.out.println("|______________________|");
     }
 
     public void info() {

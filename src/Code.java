@@ -22,6 +22,9 @@ public class Code {
             } else if(option == 2) {
                 layout.clean();
                 client.login();
+                client.info();
+                layout.catalog();
+                catalog.start();
                 option = 3;
             } else if(option == 3) {
                 layout.clean();
