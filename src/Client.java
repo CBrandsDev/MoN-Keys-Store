@@ -63,27 +63,28 @@ public class Client {
         if (name == null) {
             System.out.println("| You don't have a register\n| Do you want to register? [1 - yes | 2 - no]");
             int verify = sc.nextInt();
+            sc.nextLine();
             if (verify == 1) {
                 register();
             } else if (verify == 2) {
                 app.mainMenu();
             }
-        }
-        layout.clean();
-        layout.login();
-        System.out.println("Name: ");
-        String loginName = sc.nextLine();
-        if(!loginName.equals(name)) {
+        } else {
             layout.clean();
             layout.login();
-            System.out.println("Name incorrect, type again: ");
-            loginName = sc.nextLine();
-        } 
+            System.out.println("Name: ");
+            String loginName = sc.nextLine();
+            if(!loginName.equals(name)) {
+                layout.clean();
+                layout.login();
+                System.out.println("Name incorrect, type again: ");
+                loginName = sc.nextLine();
+            } 
         layout.clean();
         loginInfo();
         System.out.println("Password: ");
         String loginPass = sc.nextLine();
-        if(!loginPass.equals(password)) {
+        while (!loginPass.equals(password)) {
             layout.clean();
             loginInfo();
             System.out.println("Password incorrect, type again: ");
@@ -91,8 +92,9 @@ public class Client {
         }
         info();
         layout.catalog();
+        }
     }
-
+    
     public void tableInfo() {
         System.out.println("________________________");
         System.out.println("|    MoN Keys Store    |");
@@ -139,6 +141,4 @@ public class Client {
             System.out.println("|______________________|");
         }
     }
-    
-
 }
