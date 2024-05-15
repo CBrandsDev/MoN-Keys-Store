@@ -62,7 +62,6 @@ public class Client {
     public void login() {
         Code app = new Code();
 
-        
         if (name == null) {
             System.out.println("| You don't have a register\n| Do you want to register? [1 - yes | 2 - no]");
             int verify = sc.nextInt();
@@ -77,24 +76,24 @@ public class Client {
             layout.login();
             System.out.println("Name: ");
             String loginName = sc.nextLine();
-            if(!loginName.equals(name)) {
+            while (!loginName.equals(name)) {
                 layout.clean();
                 layout.login();
                 System.out.println("Name incorrect, type again: ");
                 loginName = sc.nextLine();
-            } 
-        layout.clean();
-        loginInfo();
-        System.out.println("Password: ");
-        String loginPass = sc.nextLine();
-        while (!loginPass.equals(password)) {
+            }
             layout.clean();
             loginInfo();
-            System.out.println("Password incorrect, type again: ");
-            loginPass = sc.nextLine();
-        }
-        info();
-        layout.catalog();
+            System.out.println("Password: ");
+            String loginPass = sc.nextLine();
+            while (!loginPass.equals(password)) {
+                layout.clean();
+                loginInfo();
+                System.out.println("Password incorrect, type again: ");
+                loginPass = sc.nextLine();
+            }
+            info();
+            layout.catalog();
         }
     }
     
