@@ -21,8 +21,12 @@ public class Layout {
         System.out.println("");
         System.out.println("");
         System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        
     }
-
+    
     public void mainMenu() {
         System.out.println("________________________");
         System.out.println("|    MoN Keys Store    |");

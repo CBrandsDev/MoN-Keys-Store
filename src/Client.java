@@ -7,7 +7,8 @@ public class Client {
 
     Layout layout = new Layout();
     Scanner sc = new Scanner(System.in);
-
+    
+    
     public void register() {
         layout.clean();
         layout.register();
@@ -60,6 +61,8 @@ public class Client {
    
     public void login() {
         Code app = new Code();
+
+        
         if (name == null) {
             System.out.println("| You don't have a register\n| Do you want to register? [1 - yes | 2 - no]");
             int verify = sc.nextInt();
@@ -138,7 +141,7 @@ public class Client {
             System.out.println("| Welcome              |");
             System.out.println("| "+name+"                ");
             System.out.println("| "+cpf+"                  ");
-            System.out.println("|______________________|");
+            System.out.println("|----------------------|");
         }
     }
 }
