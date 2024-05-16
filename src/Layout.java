@@ -65,9 +65,9 @@ public class Layout {
         System.out.println("|                      |");
         System.out.println("| 1 -  Pc Gamer        |");
         System.out.println("| 2 -  AirFryer        |");
-        System.out.println("| 3 -                  |");
-        System.out.println("| 4 -                  |");
-        System.out.println("| 5 -                  |");
+        System.out.println("| 3 -  TV 60'          |");
+        System.out.println("| 4 -  PS5             |");
+        System.out.println("| 5 -  Iphone 14       |");
         System.out.println("|______________________|");
     }
 
@@ -80,9 +80,9 @@ public class Layout {
         System.out.println("|                 |             |");
         System.out.println("| 1 -  Pc Gamer   | M$ 500,00   |");
         System.out.println("| 2 -  AirFryer   | M$ 29,00    |");
-        System.out.println("| 3 -             | M$          |");
-        System.out.println("| 4 -             |             |");
-        System.out.println("| 5 -             |             |");
+        System.out.println("| 3 -  TV 60'     | M$ 699,00   |");
+        System.out.println("| 4 -  PS5        | M$ 450,00   |");
+        System.out.println("| 5 -  Iphone 14  | M$ 700,00   |");
         System.out.println("|_________________|_____________|");
     }
 
