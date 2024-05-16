@@ -76,7 +76,7 @@ public class Layout {
     }
 
     public void prices() {
-        System.out.println("| Itens           | Price       |");
+        System.out.println("| Items           | Price       |");
         System.out.println("|                 |             |");
         System.out.println("| 1 -  Pc Gamer   | M$ 500,00   |");
         System.out.println("| 2 -  AirFryer   | M$ 29,00    |");
