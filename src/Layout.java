@@ -63,10 +63,11 @@ public class Layout {
     public void catalog() {
         System.out.println("| Catalog              |");
         System.out.println("|                      |");
-        System.out.println("| 1 -                  |");
-        System.out.println("| 2 -                  |");
+        System.out.println("| 1 -  Pc Gamer        |");
+        System.out.println("| 2 -  AirFryer        |");
         System.out.println("| 3 -                  |");
         System.out.println("| 4 -                  |");
+        System.out.println("| 5 -                  |");
         System.out.println("|______________________|");
     }
 
