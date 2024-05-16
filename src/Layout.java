@@ -75,6 +75,17 @@ public class Layout {
         System.out.println("1 - To Buy | 2 - Check Cart | 3 - Back Menu");
     }
 
+    public void prices() {
+        System.out.println("| Itens           | Price       |");
+        System.out.println("|                 |             |");
+        System.out.println("| 1 -  Pc Gamer   | M$ 500,00   |");
+        System.out.println("| 2 -  AirFryer   | M$ 29,00    |");
+        System.out.println("| 3 -             | M$          |");
+        System.out.println("| 4 -             |             |");
+        System.out.println("| 5 -             |             |");
+        System.out.println("|_________________|_____________|");
+    }
+
     public void exit() {
         System.out.println("________________________");
         System.out.println("|    MoN Keys Store    |");

@@ -10,7 +10,7 @@ public class Catalog {
         layout.catalogOptions();
         int menu = sc.nextInt();
         if (menu == 1) {
-            System.exit(0);
+            layout.prices();
         } else if (menu == 2) {
             System.exit(0);
         } else if (menu == 3) {

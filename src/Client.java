@@ -62,12 +62,13 @@ public class Client {
     public void login() {
         Code app = new Code();
 
-        if (name == null) {
+        if (name == null || password == null) {
             System.out.println("| You don't have a register\n| Do you want to register? [1 - yes | 2 - no]");
             int verify = sc.nextInt();
             sc.nextLine();
             if (verify == 1) {
                 register();
+                layout.clean();
             } else if (verify == 2) {
                 app.mainMenu();
             }
