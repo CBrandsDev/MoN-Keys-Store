@@ -17,4 +17,17 @@ public class Catalog {
             app.mainMenu();
         }
     }
+
+    public void show() {
+        Code app = new Code();
+        layout.catalogBack();
+        int menu = sc.nextInt();
+        while(menu != 1) {
+            layout.clean();
+            layout.catalog();
+            layout.catalogBack();
+            menu = sc.nextInt();
+        }
+        app.mainMenu();
+    }
 }

@@ -59,8 +59,9 @@ public class Layout {
         System.out.println("|                      |");
         System.out.println("|______________________|");
     }
-
+    
     public void catalog() {
+        System.out.println("________________________");
         System.out.println("| Catalog              |");
         System.out.println("|                      |");
         System.out.println("| 1 -  Pc Gamer        |");
@@ -74,6 +75,10 @@ public class Layout {
     public void catalogOptions() {
         System.out.println("1 - To Buy | 2 - Check Cart | 3 - Back Menu");
     }
+    public void catalogBack() {
+        System.out.println("1 - To exit");
+    }
+
 
     public void prices() {
         System.out.println("| Items           | Price       |");
