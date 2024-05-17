@@ -31,6 +31,9 @@ public class Client {
     public String getName() {
         return name;
     }
+    public String getPass() {
+        return password;
+    }
     public String regCpf() {
         cpf = sc.nextLine();
         return cpf;
@@ -65,7 +68,8 @@ public class Client {
     public void login() {
         Code app = new Code();
         String lgName = getName();
-        if (lgName == null) {
+        String lgPass = getPass();
+        while (lgName == null) {
             System.out.println("| You don't have a register\n| Do you want to register? [1 - yes | 2 - no]");
             int verify = sc.nextInt();
             sc.nextLine();
@@ -75,12 +79,12 @@ public class Client {
             } else if (verify == 2) {
                 app.mainMenu();
             }
-        } else {
+        } 
             layout.clean();
             layout.login();
             System.out.println("Name: ");
             String loginName = sc.nextLine();
-            while (!loginName.equals(name)) {
+            while (!loginName.equals(lgName)) {
                 layout.clean();
                 layout.login();
                 System.out.println("Name incorrect, type again: ");
@@ -90,7 +94,7 @@ public class Client {
             loginInfo();
             System.out.println("Password: ");
             String loginPass = sc.nextLine();
-            while (!loginPass.equals(password)) {
+            while (!loginPass.equals(lgPass)) {
                 layout.clean();
                 loginInfo();
                 System.out.println("Password incorrect, type again: ");
@@ -100,7 +104,7 @@ public class Client {
             info();
             layout.catalog();
         }
-    }
+    
     
     public void tableInfo() {
         System.out.println("________________________");
