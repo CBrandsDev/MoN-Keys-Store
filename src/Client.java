@@ -28,6 +28,9 @@ public class Client {
         name = sc.nextLine();
         return name;
     }
+    public String getName() {
+        return name;
+    }
     public String regCpf() {
         cpf = sc.nextLine();
         return cpf;
@@ -61,8 +64,8 @@ public class Client {
    
     public void login() {
         Code app = new Code();
-
-        if (name == null || password == null) {
+        String lgName = getName();
+        if (lgName == null) {
             System.out.println("| You don't have a register\n| Do you want to register? [1 - yes | 2 - no]");
             int verify = sc.nextInt();
             sc.nextLine();

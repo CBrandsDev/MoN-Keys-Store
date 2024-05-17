@@ -30,7 +30,7 @@ public class Code {
                 layout.clean();
                 client.info();
                 layout.catalog();
-                catalog.show();
+                catalog.start();
             } else if(option == 4) {
                 layout.clean();
                 layout.exit();
