@@ -130,15 +130,6 @@ public class Client {
     }
 
     public void loginInfo() {
-        String[] lines = {
-            "________________________",
-            "|    MoN Keys Store    |",
-            "| Name:"+name+"                |",
-            "| Password:            |",
-            "|                      |",
-            "|                      |",
-            "|______________________|"
-        };
         System.out.println("________________________");
         System.out.println("|    MoN Keys Store    |");
         System.out.println("|                      |");
