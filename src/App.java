@@ -3,8 +3,6 @@ public class App {
         Code app = new Code();
 
         app.mainMenu();
-
-        // only commit
-        // only commit again, because i so busy this days, aaaaaaa 
+ 
     }
 }
